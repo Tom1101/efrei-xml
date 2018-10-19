@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      isbn="0836217462"
->
+	  xsi:noNamespaceSchemaLocation="book.xsd">
 	<title>
 		Being a Dog Is a Full-Time Job
 	</title>
