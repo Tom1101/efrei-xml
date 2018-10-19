@@ -1,0 +1,5 @@
+a) //livre[position()=2]
+b) //livre[position()>1]/titre
+c) //livre[position()=2]/titre | //livre[position()=2]
+d) (//livre/titre[@genre='jeu'])[last()]
+e) (//livre[parution=2006]/titre)[position()=2]

@@ -1,0 +1,6 @@
+a) //performance/composition
+b) //performance//composition[count@solist=1]
+c) //performance[count@orchestra=1] | //performance[count@solist!=1]
+d) //performance//soloist[//performance//orchestra=‘London Symphony’ | CD/publisher=’Deutsche Grammophone’]
+e) CD/performance[@orchestra='London Symphony']
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="contact">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="contact" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element type="xs:string" name="name"/>
+                        <xs:element type="xs:string" name="surname" minOccurs="0"/>
+                        <xs:element type="xs:int" name="phoneNumber"/>
+                        <xs:element name="address">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element type="xs:byte" name="streetNumber"/>
+                                    <xs:element type="xs:string" name="streetName"/>
+                                    <xs:element type="xs:string" name="city"/>
+                                    <xs:element type="xs:int" name="zipcode"/>
+                                    <xs:element type="xs:string" name="country"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="type">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="person|company"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

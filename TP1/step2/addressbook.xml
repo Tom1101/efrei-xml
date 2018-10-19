@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<address_book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="addressbook.xsd">
+    <contacts>
+        <contact type="person">
+            <name>test</name>
+            <surname>eza</surname>
+            <phones>
+                <phone type="mobile">
+                    <number>123124</number>
+                </phone>
+                <phone type="fax">
+                    <number>1232312</number>
+                </phone>
+            </phones>
+            <addresses>
+                <address>
+                    <street_number>12</street_number>
+                    <street_name>DZ1OH</street_name>
+                    <city>AAZC</city>
+                    <zip>12392</zip>
+                    <country>France</country>
+                </address>
+            </addresses>
+        </contact>
+    </contacts>
+</address_book>

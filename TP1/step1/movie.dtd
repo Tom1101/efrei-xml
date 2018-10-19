@@ -1,0 +1,17 @@
+<!ELEMENT movie (title, kind, duration, movieMaker, actors, yearProduction, language, description,rating, schedules)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT kind (#PCDATA)>
+        <!ELEMENT duration (#PCDATA)>
+        <!ELEMENT movieMaker (#PCDATA)>
+        <!ELEMENT actor (#PCDATA)>
+        <!ELEMENT actors (#PCDATA|actor)*>
+        <!ELEMENT yearProduction (#PCDATA)>
+        <!ELEMENT language (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT rating (press,specs)>
+        <!ELEMENT press (#PCDATA)>
+        <!ELEMENT specs (#PCDATA)>
+        <!ELEMENT schedule (#PCDATA)>
+        <!ELEMENT schedules (schedule)*>
+        <!ATTLIST actor id CDATA #REQUIRED>
+        <!ATTLIST schedule id CDATA #REQUIRED>

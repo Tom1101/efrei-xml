@@ -1,0 +1,29 @@
+movie {
+    background-color: lightsteelblue;
+    display: block;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+title {
+    padding-top: 5px;
+    display: block;
+    font-weight:bold;
+    font-size: 14pt;
+}
+movieMaker, yearProduction{
+    padding-top: 5px;
+    display: block;
+    color: red;
+}
+actors{
+    padding-top: 5px;
+    display: block;
+    color: blue;
+    font-style: italic;
+}
+description, schedule{
+    padding-top: 5px;
+    display: block;
+}

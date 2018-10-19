@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="movie.css" type="text/css"?>
+<!DOCTYPE movie SYSTEM "movie.dtd">
+<movie>
+    <title>Les Brigades du Tigre</title>
+    <kind>Thriller</kind>
+    <duration>(2h 5min)</duration>
+    <movieMaker>By Jérôme Cornuau</movieMaker>
+    <actors>With
+        <actor id="1">C. Cornillac</actor>
+        <actor id="2">D. Kruger</actor>
+        <actor id="3">E. Baer</actor>
+    </actors>
+    <yearProduction>Year: 2005</yearProduction>
+    <language>VF (en French)</language>
+    <description>About the adventures of commissar Valentin and inspectors Terrasson and Pujol, members of the "
+        Brigades mobiles", special squad of the French police before the first world war..
+    </description>
+    <rating>
+        <press>Press : 3/5</press>
+        <specs>Spectators : 4/5</specs>
+    </rating>
+    <schedules>
+        <schedule id="1">Wed, Sat : 14:00 | 16:40 | 19:40 | 22:10</schedule>
+        <schedule id="2">Tue, Fri, Mon, Thu : 14:00 | 19:40 | 22:10</schedule>
+        <schedule id="3">Sun : 10:20 | 14:00 | 16:40 | 20:20</schedule>
+    </schedules>
+</movie>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<contact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="contact.xsd">
+    <contact type="person">
+        <name>Tom</name>
+        <surname>Nguyen</surname>
+        <phoneNumber>0123456789</phoneNumber>
+        <address>
+            <streetNumber>10</streetNumber>
+            <streetName>Avenue D'italie</streetName>
+            <city>Paris</city>
+            <zipcode>75013</zipcode>
+            <country>France</country>
+        </address>
+    </contact>
+    <contact type="company">
+        <name>Tom</name>
+        <phoneNumber>0123456789</phoneNumber>
+        <address>
+            <streetNumber>10</streetNumber>
+            <streetName>Avenue D'italie</streetName>
+            <city>Paris</city>
+            <zipcode>75013</zipcode>
+            <country>France</country>
+        </address>
+    </contact>
+</contact>
