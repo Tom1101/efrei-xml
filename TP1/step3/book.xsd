@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:simpleType name="stringLimit">
-    <xs:restriction base="xs:string">
-      <xs:maxLength value="40" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="book" type="bookType"/>
-  <xs:complexType name="characterType">
-    <xs:sequence>
-      <xs:element name="name" type="stringLimit" minOccurs="1" maxOccurs="1" />
-      <xs:element type="stringLimit" name="friend-of" minOccurs="0" maxOccurs="unbounded"/>
-      <xs:element type="xs:date" name="since" minOccurs="1" maxOccurs="1"/>
-      <xs:element type="xs:string" name="qualification" minOccurs="1" maxOccurs="1"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="bookType">
-    <xs:sequence>
-      <xs:element name="title" type="stringLimit" minOccurs="1" maxOccurs="1" />
-      <xs:element name="author" type="stringLimit" minOccurs="1" maxOccurs="1" />
-      <xs:element type="characterType" name="character" maxOccurs="unbounded" minOccurs="1"/>
-    </xs:sequence>
-    <xs:attribute name="isbn">
-      <xs:simpleType>
-        <xs:restriction base="xs:int">
-          <xs:totalDigits value="10" />
+
+    <xs:simpleType name="stringLimit">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="40"/>
         </xs:restriction>
-      </xs:simpleType>
-    </xs:attribute>
-  </xs:complexType>
+    </xs:simpleType>
+
+    <xs:element name="book" type="bookType"/>
+
+    <xs:complexType name="characterType">
+        <xs:sequence>
+            <xs:element name="name" type="stringLimit" minOccurs="1" maxOccurs="1"/>
+            <xs:element type="stringLimit" name="friend-of" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element type="xs:date" name="since" minOccurs="1" maxOccurs="1"/>
+            <xs:element type="xs:string" name="qualification" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="bookType">
+        <xs:sequence>
+            <xs:element name="title" type="stringLimit" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="author" type="stringLimit" minOccurs="1" maxOccurs="1"/>
+            <xs:element type="characterType" name="character" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+        <xs:attribute name="isbn">
+            <xs:simpleType>
+                <xs:restriction base="xs:int">
+                    <xs:totalDigits value="10"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
 </xs:schema>

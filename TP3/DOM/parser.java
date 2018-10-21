@@ -97,6 +97,8 @@ public class parser {
                     //show weblink
                     out.println("Lien : <a href=\"" + weblink.getTextContent() + "\">" + weblink.getTextContent() + "</a></h2>");
                     out.println("<br />");
+                    out.println("<br />");
+                    out.println("<hr>");
                 }
             }
         }
