@@ -1,18 +1,11 @@
 import java.io.*;
 import java.security.AllPermission;
 import java.util.Scanner;
-
 import org.w3c.dom.*;
 import org.xml.sax.*;
 import javax.xml.parsers.*;
 
-/**
- * @author Administrateur
- *
- */
-
-
-public class Parser_exo3 {
+public class parser_exo3 {
 
 	public PrintWriter out = null;
 

@@ -3,7 +3,7 @@ public class Transf_exo3 {
 	public static void main(String[] args) {
 		try {
 		System.out.println("debut");
-			Parser_exo3 parseur  = new Parser_exo3();
+			parser_exo3 parseur  = new parser_exo3();
 		
 		String filename = "gender.xml";
 		

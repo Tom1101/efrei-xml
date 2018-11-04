@@ -1,15 +1,6 @@
-/*
- * Created on 26 nov. 2003
- *
- * To change the template for this generated file go to Window - Preferences -
- * Java - Code Generation - Code and Comments
- */
-
 import java.io.*;
-
 import org.w3c.dom.*;
 import org.xml.sax.*;
-
 import javax.xml.parsers.*;
 
 public class parser_exo1 {
@@ -31,7 +22,7 @@ public class parser_exo1 {
 
         //creaion du fichier output
         out = new PrintWriter(
-                new FileOutputStream("./output.html"));
+                new FileOutputStream("./output_exo1.html"));
         out.println("<html xmlns:fo=\"http://www.w3.org/1999/XSL/Format\"><head />");
         out.println("<body>");
         out.println("<META http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><h1 align=\"left\">Domaines </h1>");
