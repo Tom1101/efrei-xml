@@ -9,28 +9,28 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class exe2B_xpath {
-     static void deleteNode(String link, String element) throws ParserConfigurationException, IOException, SAXException, XPathExpressionException {
+    static void deleteNode(String link, String element) throws ParserConfigurationException, IOException, SAXException, XPathExpressionException {
         String filename = "bib.xml";
         DocumentBuilderFactory _factory = DocumentBuilderFactory.newInstance();
-        //ignorer les commentaires dans les fichiers XML parser
+        //ignorer les commentaires dans les fichiers XML parser_exo1
         _factory.setIgnoringComments(true);
         // cree un parseur
         DocumentBuilder _builder = _factory.newDocumentBuilder();
         // Charger le document
         Document doc = _builder.parse(filename);
         XPath xPath = XPathFactory.newInstance().newXPath();
-         NodeList nodeList = (NodeList) xPath.compile(link).evaluate(
+        NodeList nodeList = (NodeList) xPath.compile(link).evaluate(
                 doc, XPathConstants.NODESET);
         for (int i = 0; i < nodeList.getLength(); i++) {
             if (nodeList.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 final Element domain = (Element) nodeList.item(i);
                 final Element element1 = (Element) domain.getElementsByTagName(element).item(0);
-                //domain.removeChild(element1);
                 nodeList.item(i).removeChild(element1);
                 System.out.println(domain.getTextContent());
             }
         }
     }
+
     public static void main(String[] args) {
         try {
             Scanner in = new Scanner(System.in);

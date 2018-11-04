@@ -13,12 +13,12 @@
  * Window - Preferences - Java - Code Generation - Code and Comments
  */
 
-public class Transf {
+public class Transf_exo1 {
 
 	public static void main(String[] args) {
 		try {
 		System.out.println("debut");
-			parser parseur  = new parser();
+			parser_exo1 parseur  = new parser_exo1();
 		
 		String filename = "bib.xml";
 		

@@ -12,7 +12,7 @@ import org.xml.sax.*;
 
 import javax.xml.parsers.*;
 
-public class parser {
+public class parser_exo1 {
 
     public PrintWriter out = null;
 
@@ -39,7 +39,7 @@ public class parser {
         //instancier le contrcuteur de parseurs
         DocumentBuilderFactory _factory = DocumentBuilderFactory.newInstance();
 
-        //ignorer les commentaires dans les fichiers XML parser
+        //ignorer les commentaires dans les fichiers XML parser_exo1
         _factory.setIgnoringComments(true);
 
         // cree un parseur

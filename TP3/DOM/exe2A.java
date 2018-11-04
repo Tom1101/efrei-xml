@@ -4,7 +4,6 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.*;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +25,7 @@ public class exe2A {
         //instancier le contrcuteur de parseurs
         DocumentBuilderFactory _factory = DocumentBuilderFactory.newInstance();
 
-        //ignorer les commentaires dans les fichiers XML parser
+        //ignorer les commentaires dans les fichiers XML parser_exo1
         _factory.setIgnoringComments(true);
 
         // cree un parseur

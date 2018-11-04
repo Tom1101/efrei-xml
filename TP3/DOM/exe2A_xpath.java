@@ -12,7 +12,7 @@ public class exe2A_xpath {
     static void readNode(String link, String element) throws ParserConfigurationException, IOException, SAXException, XPathExpressionException {
         String filename = "bib.xml";
         DocumentBuilderFactory _factory = DocumentBuilderFactory.newInstance();
-        //ignorer les commentaires dans les fichiers XML parser
+        //ignorer les commentaires dans les fichiers XML parser_exo1
         _factory.setIgnoringComments(true);
         // cree un parseur
         DocumentBuilder _builder = _factory.newDocumentBuilder();
@@ -33,7 +33,7 @@ public class exe2A_xpath {
         try {
             String filename = "bib.xml";
             DocumentBuilderFactory _factory = DocumentBuilderFactory.newInstance();
-            //ignorer les commentaires dans les fichiers XML parser
+            //ignorer les commentaires dans les fichiers XML parser_exo1
             _factory.setIgnoringComments(true);
             // cree un parseur
             DocumentBuilder _builder = _factory.newDocumentBuilder();
